@@ -3,10 +3,10 @@ import "./ToogleSwitch.scss"
 
 const ToogleSwitch = () => {
     const [mode, setMode] = useState("Select Mode");
-    const bg = document.getElementById('bg');
+
 
     const clickHandle: React.MouseEventHandler<HTMLInputElement> = (e) => {
-
+        const bg = document.getElementById('bg');
         if (e.currentTarget.checked) {
             setMode("Dark Mode");
             bg?.classList.add("dark")

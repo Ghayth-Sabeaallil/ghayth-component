@@ -5,15 +5,18 @@ const Light = () => {
     const pathRef = useRef<SVGPathElement | null>(null);
 
     const clickHandle: React.MouseEventHandler<HTMLInputElement> = (e) => {
+
         const path = pathRef.current;
         if (e.currentTarget.checked) {
             if (path) {
                 path.setAttribute("fill", "white")
+
             }
         }
         else {
             if (path) {
                 path.setAttribute("fill", "#FAC546")
+
             }
         }
 
