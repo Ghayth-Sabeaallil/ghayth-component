@@ -9,7 +9,7 @@ const ToogleSwitch = ({ handleClick }: ToogleSwitchProps) => {
     return (
         <>
 
-            <label className="switch">
+            <label className="ToggleSwitch">
                 <input onClick={handleClick} type="checkbox" />
                 <span className="slider round"></span>
             </label>
