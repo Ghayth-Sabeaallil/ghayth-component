@@ -3,32 +3,33 @@ import "./ToogleSwitch.scss"
 
 const ToogleSwitch = () => {
     const [mode, setMode] = useState("Select Mode");
-    const root = document.getElementById('root');
+    const bg = document.getElementById('bg');
 
     const clickHandle: React.MouseEventHandler<HTMLInputElement> = (e) => {
         if (e.currentTarget.checked) {
             setMode("Dark Mode");
-            if (root) {
-                root.style.backgroundColor = "#4d4d4d"
-                root.style.color = "#EEEEEE"
+            if (bg) {
+                bg.style.backgroundColor = "#4d4d4d"
+                bg.style.color = "#EEEEEE"
             }
 
         }
         else {
             setMode("Light Mode");
-            if (root) {
-                root.style.backgroundColor = "#EEEEEE"
-                root.style.color = "#000000"
+            if (bg) {
+                bg.style.backgroundColor = "#EEEEEE"
+                bg.style.color = "#000000"
             }
         }
     };
     return (
         <>
-            <h1>{mode}</h1>
-            <label className="switch">
-                <input onClick={clickHandle} type="checkbox" />
-                <span className="slider round"></span>
-            </label>
+            <div className="halv" id="bg"><h1>{mode}</h1>
+                <label className="switch">
+                    <input onClick={clickHandle} type="checkbox" />
+                    <span className="slider round"></span>
+                </label></div>
+
         </>
     )
 }
