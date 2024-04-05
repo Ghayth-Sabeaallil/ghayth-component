@@ -6,7 +6,7 @@ This components is to switch between dark and light mode using toggle switch
 ## Installation 
 Step 1: Go to the projects folder
 ```console
-$ cd ghayth-toggle-switch/
+$ cd ghayth-component/
 ```
 Step 2: Install node_modules
 ```console
