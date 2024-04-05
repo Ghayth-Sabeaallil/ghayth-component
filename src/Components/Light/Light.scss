@@ -6,6 +6,12 @@
   align-items: center;
   flex-direction: column;
 }
+.switch-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
 .switch {
     position: relative;
     display: flex;

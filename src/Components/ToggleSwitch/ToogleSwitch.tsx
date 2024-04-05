@@ -6,20 +6,17 @@ const ToogleSwitch = () => {
     const bg = document.getElementById('bg');
 
     const clickHandle: React.MouseEventHandler<HTMLInputElement> = (e) => {
+
         if (e.currentTarget.checked) {
             setMode("Dark Mode");
-            if (bg) {
-                bg.style.backgroundColor = "#4d4d4d"
-                bg.style.color = "#EEEEEE"
-            }
+            bg?.classList.add("dark")
+            bg?.classList?.remove("light")
 
         }
         else {
             setMode("Light Mode");
-            if (bg) {
-                bg.style.backgroundColor = "#EEEEEE"
-                bg.style.color = "#000000"
-            }
+            bg?.classList?.remove("dark")
+            bg?.classList.add("light")
         }
     };
     return (
