@@ -6,7 +6,4 @@
 #root {
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url("../assets/img/bg.webp");
-  background-size: cover;
-  flex-wrap: wrap;
 }

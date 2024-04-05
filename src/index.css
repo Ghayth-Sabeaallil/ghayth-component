@@ -9,6 +9,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/img/bg.webp");
-  background-size: cover;
+  flex-direction: column;
 }
