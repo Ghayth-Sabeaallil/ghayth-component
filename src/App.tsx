@@ -1,9 +1,9 @@
-import ToogleSwitch from "./Components/ToggleSwitch/ToogleSwitch"
 import Light from "./Components/Light/Light"
+import Mode from "./Components/Mode/Mode"
 function App() {
   return (
     <>
-      <ToogleSwitch />
+      <Mode />
       <Light />
     </>
   )
